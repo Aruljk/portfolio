@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.devfolio{
+    background-image:url(../picture/bac.jpg);   
+height: 600px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.navigation{
+    text-align: center;
+    justify-items: center;
+    background-color: rgb(35, 4, 107);
+    height: 40px;
+    margin-right: 260px;
+}
+
+.navigation ul{
+    display: flex;
+}
+.navigation li{
+    list-style-type: none;
+    margin: 0 25px 0 25px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.navigation ul li a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    
+}
+.navigation ul li a::before{
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0px;
+      background-color: rgb(211, 22, 148);
+      transition: .5s;
+      top:100% ;
+      margin-top: 5px;
+
+}
+.navigation ul li:hover a::before{
+      width: 100%;
+      transition: .5s;
+}
